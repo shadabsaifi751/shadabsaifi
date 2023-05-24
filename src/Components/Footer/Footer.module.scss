@@ -1,0 +1,34 @@
+
+.github,
+.instagram,
+.twitter,
+.linkedin,
+.codepen {
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    -webkit-mask: url('../../Accects/Icons/TechIcon/gitrepo.svg') center no-repeat;
+    mask-image: url('../../Accects/Icons/TechIcon/gitrepo.svg') center no-repeat;
+    background: white;
+}
+
+.instagram {
+    -webkit-mask: url('../../Accects/Icons/Social/instagram.svg') center no-repeat;
+    mask-image: url('../../Accects/Icons/Social/instagram.svg') center no-repeat;
+}
+
+.twitter {
+    -webkit-mask: url('../../Accects/Icons/Social/twitter.svg') center no-repeat;
+    mask-image: url('../../Accects/Icons/Social/twitter.svg') center no-repeat;
+}
+
+.linkedin {
+    -webkit-mask: url('../../Accects/Icons/Social/linkedin.svg') center no-repeat;
+    mask-image: url('../../Accects/Icons/Social/linkedin.svg') center no-repeat;
+}
+
+.codepen {
+    -webkit-mask: url('../../Accects/Icons/Social/codepen.svg') center no-repeat;
+    mask-image: url('../../Accects/Icons/Social/codepen.svg') center no-repeat;
+}

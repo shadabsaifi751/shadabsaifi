@@ -1,0 +1,71 @@
+.avtar_Wrap {
+  width: 385px;
+  height: 431px;
+  background: radial-gradient(50% 50% at 50% 50%,
+      #763cac 0%,
+      rgba(50, 15, 133, 0) 100%);
+
+  @media (max-width:768px) {
+    width: 100%;
+  height: 100%;
+  }
+}
+
+.avtar_Wrap::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  width: 125.78px;
+  height: 88.86px;
+  right: 38px;
+  background: url("../../Accects/Icons/Arrow.png") no-repeat right center;
+
+  @media (max-width:768px) {
+    display: none;
+  }
+}
+
+.avtar_Wrap .avtar {
+  width: 258px;
+  height: 259px;
+  background: radial-gradient(50% 50% at 50% 50%,
+      #ffffff 17.71%,
+      rgba(67, 67, 67, 0) 100%);
+}
+
+.title {
+  background: rgba(19, 4, 40, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.main_title {
+  line-height: 56px;
+
+  @media (max-width:768px) {
+    line-height: 42px;
+  }
+
+  span {
+    position: relative;
+    padding: 8px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 121px;
+      height: 73px;
+      transform: translate(-50%, -50%);
+      content: "";
+      background: url("../../Accects/Icons/Ellipse.svg") no-repeat center;
+
+      @media (max-width:768px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

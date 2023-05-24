@@ -1,0 +1,19 @@
+.Cursor {
+  border-radius: 100%;
+  mix-blend-mode: difference;
+  z-index: 1024;
+  height: 7px;
+  width: 7px;
+  background-color: #fff;
+}
+
+.cursorFollower {
+  border-radius: 100%;
+  left: -1rem;
+  top: -1rem;
+  z-index: 1023;
+  background: rgba(180, 185, 188, 0.1);
+    border: 1px solid rgba(131, 134, 135, 0.15);
+  will-change: transform;
+  backdrop-filter: blur(4px);
+}

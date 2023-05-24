@@ -1,0 +1,186 @@
+.SkillWrapper .react,
+.SkillWrapper .js,
+.SkillWrapper .bootstarp,
+.SkillWrapper .ts,
+.SkillWrapper .tailwindCss,
+.SkillWrapper .html,
+.SkillWrapper .css,
+.SkillWrapper .scss,
+.SkillWrapper .next,
+.SkillWrapper .figma,
+.SkillWrapper .photoshop,
+.SkillWrapper .github,
+.SkillWrapper .bitbucket,
+.SkillWrapper .gitbase,
+.SkillWrapper .jquery,
+.SkillWrapper .redux,
+.SkillWrapper .xd,
+.SkillWrapper .ionic {
+  height: 25px;
+  width: 25px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  background: url("../../Accects/Icons/TechIcon/js.svg") no-repeat center;
+}
+
+.SkillWrapper .react {
+  background: url("../../Accects/Icons/TechIcon/react.svg") no-repeat center;
+}
+
+.SkillWrapper .bootstarp {
+  background: url("../../Accects/Icons/TechIcon/bootstrap.svg") no-repeat center;
+}
+
+.SkillWrapper .ts {
+  background: url("../../Accects/Icons/TechIcon/ts.svg") no-repeat center;
+}
+
+.SkillWrapper .tailwindCss {
+  background: url("../../Accects/Icons/TechIcon/tailwindCss.svg") no-repeat center;
+}
+
+.SkillWrapper .html {
+  background: url("../../Accects/Icons/TechIcon/html.svg") no-repeat center;
+}
+
+.SkillWrapper .css {
+  background: url("../../Accects/Icons/TechIcon/css.svg") no-repeat center;
+}
+
+.SkillWrapper .scss {
+  background: url("../../Accects/Icons/TechIcon/Sass-icon.svg") no-repeat center;
+}
+
+.SkillWrapper .next {
+  background: url("../../Accects/Icons/TechIcon/next.svg") no-repeat center;
+}
+
+.SkillWrapper .figma {
+  background: url("../../Accects/Icons/TechIcon/figma.svg") no-repeat center;
+}
+
+.SkillWrapper .photoshop {
+  background: url("../../Accects/Icons/TechIcon/ps.svg") no-repeat center;
+}
+
+.SkillWrapper .xd {
+  background: url("../../Accects/Icons/TechIcon/xd.svg") no-repeat center;
+}
+
+.SkillWrapper .github {
+  background: url("../../Accects/Icons/TechIcon/GithubIcon.svg") no-repeat center;
+}
+
+.SkillWrapper .bitbucket {
+  background: url("../../Accects/Icons/TechIcon/bitbucket.svg") no-repeat center;
+}
+
+.SkillWrapper .gitbase {
+  background: url("../../Accects/Icons/TechIcon/gitbase.svg") no-repeat center;
+}
+
+.SkillWrapper .redux {
+  background: url("../../Accects/Icons/TechIcon/redux.svg") no-repeat center;
+}
+
+.SkillWrapper .ionic {
+  background: url("../../Accects/Icons/TechIcon/Ionic.svg") no-repeat center;
+}
+
+.SkillWrapper .jquery {
+  background: url("../../Accects/Icons/TechIcon/jquery.svg") no-repeat center;
+}
+
+.connection::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 542px;
+  height: 330px;
+  background: url("../../Accects/Icons/skill-arrow.svg") no-repeat center;
+
+  @media (max-width:768px) {
+    width: 100%;
+  }
+}
+
+.IconWrapper {
+  background: rgba(180, 185, 188, 0.1);
+  border: 1px solid rgba(131, 134, 135, 0.15);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.skillDomWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 542px;
+  height: 330px;
+  background: radial-gradient(50% 50% at 50% 50%, #763cac4f 0%, rgba(50, 15, 133, 0) 100%);
+  z-index: 1;
+
+  @media (max-width:768px) {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #763cac4f 0%, rgba(50, 15, 133, 0) 100%);
+  }
+}
+
+.skillDom {
+  height: 598px;
+}
+
+.skillDomw {
+  width: 341px;
+
+  @media (max-width:768px) {
+    width: 100%;
+  }
+}
+
+.brand_wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  @media (max-width:768px) {
+    top: 48%;
+  }
+  @media (max-width:580px) {
+    top: 26%;
+  }
+
+  // background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
+  // filter: drop-shadow(0px 1px 14px rgba(255, 255, 255, 0.55));
+  .logo {
+    width: 184px;
+    height: 184px;
+
+    @media (max-width:1024px) {
+      width: 146px;
+      height: 146px;
+    }
+    @media (max-width:768px) {
+      max-width: 100%;
+      height: -webkit-fill-available;
+      width: 100%;
+      height: 107px;
+    }
+  }
+}
+
+.logo {
+  height: 180px;
+}
+
+.logo_width {
+  width: 180px;
+}
