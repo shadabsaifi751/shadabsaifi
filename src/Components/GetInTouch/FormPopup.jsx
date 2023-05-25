@@ -62,10 +62,10 @@ const FormPopup = ({ Close, isOpen, ModalRef }) => {
     if (!isValid) {
       try {
         await emailjs.send(
-          "service_hyyr9xa",
-          "template_lvc8gzl",
+          "service_ec0n3ns",
+          "template_70st3l8",
           contact_Us,
-          "3E0IJworTzn9pyQSu"
+          "XJN2El-Vk_b5cm8AL"
         );
         // console.log(reset, "contact_Us");
         toastifySuccess();
