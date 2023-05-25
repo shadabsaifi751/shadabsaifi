@@ -2,7 +2,7 @@ export const MetaData = {
   title: "Portfolio | Mohd shadab saifi",
   description:
     "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend architecture.",
-  siteUrl: "",
+  siteUrl: "https://shadabsaifi.vercel.app/preview.png",
 };
 
 export const EmailId = "shadabsaifi749@gmail.com";
