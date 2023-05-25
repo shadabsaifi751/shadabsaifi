@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const FormPopup = ({ Close, isOpen, ModalRef }) => {
+const FormPopup = ({ Close, isOpen, ModalRef,setOpen }) => {
   const FormRef = useRef();
   const [contact, setContact] = useState(
     {
@@ -69,6 +69,7 @@ const FormPopup = ({ Close, isOpen, ModalRef }) => {
         );
         // console.log(reset, "contact_Us");
         toastifySuccess();
+        setOpen(false)
         setContact({
           name: "",
           email: "",

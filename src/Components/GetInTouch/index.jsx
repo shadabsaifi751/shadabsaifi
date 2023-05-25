@@ -44,7 +44,7 @@ const GetInTouch = () => {
           </div>
         </div>
       </section>
-      <FormPopup ModalRef={ModalRef} Close={closeHandle} isOpen={open}/>
+      <FormPopup ModalRef={ModalRef} Close={closeHandle} isOpen={open} setOpen={setOpen}/>
     </>
   );
 };
