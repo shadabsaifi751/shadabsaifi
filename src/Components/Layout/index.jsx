@@ -44,7 +44,7 @@ const Layout = () => {
       <Skill />
       <Project />
       <GetInTouch />
-      {desktop && <Footer />}
+      <Footer />
     </React.Fragment>
   );
 };
