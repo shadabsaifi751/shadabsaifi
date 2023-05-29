@@ -3,6 +3,7 @@ import Project1 from "../../Accects/Images/project1.png";
 import Project2 from "../../Accects/Images/project2.png";
 import Project3 from "../../Accects/Images/project3.png";
 import Project4 from "../../Accects/Images/project4.png";
+import Project5 from "../../Accects/Images/project5.png";
 import ProjectSection from "../Common/ProjectComponent";
 
 const Project = () => {
@@ -38,6 +39,13 @@ const Project = () => {
           image={Project4}
           url="https://printablecalendar-template.com/"
           LayoutChange={true}
+        />
+        <ProjectSection
+          title="Featured Project"
+          projectName="Image convetor"
+          discription="Convert each image into a PDF or extract all images contained in a PDF."
+          image={Project5}
+          url="https://ilovepdf.co.uk/"
         />
       </div>
     </section>

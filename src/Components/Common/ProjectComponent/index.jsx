@@ -57,12 +57,18 @@ const ProjectSection = (
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
-                  <a href={RepoUrl} target="_blank">
-                    <i className={`${styles.Icon_Github} link`}></i>
-                  </a>
-                  <a href={url} target="_blank">
-                    <i className={`${styles.Icon_Link} link`}></i>
-                  </a>
+                  {
+                    RepoUrl &&
+                    <a href={RepoUrl} target="_blank">
+                      <i className={`${styles.Icon_Github} link`}></i>
+                    </a>
+                  }
+                  {
+                    url &&
+                    <a href={url} target="_blank">
+                      <i className={`${styles.Icon_Link} link`}></i>
+                    </a>
+                  }
                 </div>
               </div>
             </React.Fragment>
@@ -99,12 +105,18 @@ const ProjectSection = (
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
-                  <a href={RepoUrl} target="_blank">
-                    <i className={`${styles.Icon_Github} link`}></i>
-                  </a>
-                  <a href={url} target="_blank">
-                    <i className={`${styles.Icon_Link} link`}></i>
-                  </a>
+                  {
+                    RepoUrl &&
+                    <a href={RepoUrl} target="_blank">
+                      <i className={`${styles.Icon_Github} link`}></i>
+                    </a>
+                  }
+                  {
+                    url &&
+                    <a href={url} target="_blank">
+                      <i className={`${styles.Icon_Link} link`}></i>
+                    </a>
+                  }
                 </div>
               </div>
               <div
