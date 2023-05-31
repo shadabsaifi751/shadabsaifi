@@ -35,7 +35,7 @@ const Header = ({ Resize }) => {
     }
   };
 
-  console.log(navOpen);
+  // console.log(navOpen);
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -113,7 +113,7 @@ const Header = ({ Resize }) => {
           </div>
         </div>
       </header>
-      <MobileMenu open={navOpen} NavigationRef={NavigationRef} />
+      <MobileMenu close={setNavOpen} open={navOpen} NavigationRef={NavigationRef} />
     </React.Fragment>
   );
 };
