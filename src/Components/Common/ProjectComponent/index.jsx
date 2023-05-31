@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./ProjectSection.module.scss";
 
 const ProjectSection = (
-  { title, projectName, discription, RepoUrl, LayoutChange, image, url },
+  { title, projectName, discription, RepoUrl, technology, LayoutChange, image, url },
   ...props
 ) => {
   return (
@@ -53,10 +53,15 @@ const ProjectSection = (
                   </p>
                 </div>
                 <div
-                  className={`flex gap-4 justify-start md:justify-end items-center ${styles.Icon_group}`}
+                  className={`flex gap-2 lg:gap-4 flex-wrap justify-start md:justify-end items-center ${styles.Icon_group}`}
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
+                  {
+                    technology && technology.map((item, key) => (
+                      <span className={`link font-Preahvihear text-xs md:text-sm `} key={key}>{item}</span>
+                    ))
+                  }
                   {
                     RepoUrl &&
                     <a href={RepoUrl} target="_blank">
@@ -65,10 +70,11 @@ const ProjectSection = (
                   }
                   {
                     url &&
-                    <a href={url} target="_blank">
+                    <a href={url} target="_blank" className="order-1">
                       <i className={`${styles.Icon_Link} link`}></i>
                     </a>
                   }
+
                 </div>
               </div>
             </React.Fragment>
@@ -101,7 +107,7 @@ const ProjectSection = (
                   </p>
                 </div>
                 <div
-                  className={`flex gap-4 items-center ${styles.Icon_group}`}
+                  className={`flex gap-2 lg:gap-4 flex-wrap items-center ${styles.Icon_group}`}
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
@@ -116,6 +122,11 @@ const ProjectSection = (
                     <a href={url} target="_blank">
                       <i className={`${styles.Icon_Link} link`}></i>
                     </a>
+                  }
+                  {
+                    technology && technology.map((item, key) => (
+                      <span className={`link font-Preahvihear text-xs md:text-sm`} key={key}>{item}</span>
+                    ))
                   }
                 </div>
               </div>
