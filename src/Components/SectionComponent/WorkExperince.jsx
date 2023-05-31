@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./WorkExperince.module.scss";
 import Image from "next/image";
-import allince from "../../Accects/Icons/allinceweb.svg";
+import allince from "../../Accects/Icons/allince.png";
 import Edneed from "../../Accects/Icons/edneed.svg";
 
 const WorkExperince = () => {
@@ -31,7 +31,7 @@ const WorkExperince = () => {
               />
               <div>
                 <h2 className={` font-poppins text-center md:text-left`}>
-                  Allince Web Solution Pvt Ltd.
+                  Freelancing on Upwork.
                 </h2>
                 <p className={` font-poppins text-center md:text-left`}>
                   I specialize in creating intuitive, accessible websites
