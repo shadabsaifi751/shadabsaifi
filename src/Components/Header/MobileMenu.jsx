@@ -5,14 +5,14 @@ import styles from "./Header.module.scss"
 const MobileMenu = ({open,close, NavigationRef }) => {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("Mohd_shadab(Resume).pdf").then((response) => {
+    fetch("SHADAB-react.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Mohd_shadab(Resume).pdf";
+        alink.download = "SHADAB-react.pdf";
         alink.click();
       });
     });
