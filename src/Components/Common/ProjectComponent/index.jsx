@@ -3,7 +3,16 @@ import React from "react";
 import styles from "./ProjectSection.module.scss";
 
 const ProjectSection = (
-  { title, projectName, discription, RepoUrl, technology, LayoutChange, image, url },
+  {
+    title,
+    projectName,
+    discription,
+    RepoUrl,
+    technology,
+    LayoutChange,
+    image,
+    url,
+  },
   ...props
 ) => {
   return (
@@ -14,8 +23,8 @@ const ProjectSection = (
             <React.Fragment>
               <div
                 className={`overflow-hidden rounded-2xl border border-primary ${styles.left_panel} ${styles.Even_Active} bg-Icon hover:bg-transparent`}
-                data-aos="fade-right"
-                data-aos-duration="700"
+                data-aos="fade-up"
+                data-aos-duration="500"
               >
                 <Image
                   src={image}
@@ -57,24 +66,25 @@ const ProjectSection = (
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
-                  {
-                    technology && technology.map((item, key) => (
-                      <span className={`link font-Preahvihear text-xs md:text-sm `} key={key}>{item}</span>
-                    ))
-                  }
-                  {
-                    RepoUrl &&
+                  {technology &&
+                    technology.map((item, key) => (
+                      <span
+                        className={`link font-Preahvihear text-xs md:text-sm `}
+                        key={key}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  {RepoUrl && (
                     <a href={RepoUrl} target="_blank">
                       <i className={`${styles.Icon_Github} link`}></i>
                     </a>
-                  }
-                  {
-                    url &&
+                  )}
+                  {url && (
                     <a href={url} target="_blank" className="order-1">
                       <i className={`${styles.Icon_Link} link`}></i>
                     </a>
-                  }
-
+                  )}
                 </div>
               </div>
             </React.Fragment>
@@ -111,29 +121,31 @@ const ProjectSection = (
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
-                  {
-                    RepoUrl &&
+                  {RepoUrl && (
                     <a href={RepoUrl} target="_blank">
                       <i className={`${styles.Icon_Github} link`}></i>
                     </a>
-                  }
-                  {
-                    url &&
+                  )}
+                  {url && (
                     <a href={url} target="_blank">
                       <i className={`${styles.Icon_Link} link`}></i>
                     </a>
-                  }
-                  {
-                    technology && technology.map((item, key) => (
-                      <span className={`link font-Preahvihear text-xs md:text-sm`} key={key}>{item}</span>
-                    ))
-                  }
+                  )}
+                  {technology &&
+                    technology.map((item, key) => (
+                      <span
+                        className={`link font-Preahvihear text-xs md:text-sm`}
+                        key={key}
+                      >
+                        {item}
+                      </span>
+                    ))}
                 </div>
               </div>
               <div
-                className={`overflow-hidden rounded-2xl border border-primary ${styles.right_panel} bg-Icon hover:bg-transparent`}
-                data-aos="fade-left"
-                data-aos-duration="700"
+                className={`overflow-hidden rounded-2xl border border-primary ${styles.right_panel} bg-Icon`}
+                data-aos="fade-up"
+                data-aos-duration="500"
               >
                 <Image
                   src={image}

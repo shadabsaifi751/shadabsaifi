@@ -29,7 +29,9 @@ const Skill = () => {
             SkillIcon.filter((item) => item.tech === "Frontend").map(
               (items, key) => (
                 <li
-                  data-aos="flip-left"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="800"
                   className={`w-11 h-11 flex items-center justify-center rounded-full ${styles.IconWrapper} link`}
                   key={key}
                 >
@@ -43,7 +45,9 @@ const Skill = () => {
             SkillIcon.filter((item) => item.tech === "design tool").map(
               (items, key) => (
                 <li
-                  data-aos="flip-right"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="900"
                   className={`w-11 h-11 flex items-center justify-center rounded-full ${styles.IconWrapper} link`}
                   key={key}
                 >
@@ -59,7 +63,9 @@ const Skill = () => {
             SkillIcon.filter((item) => item.tech === "other").map(
               (items, key) => (
                 <li
-                  data-aos="flip-left"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1000"
                   className={`w-11 h-11 flex items-center justify-center rounded-full relative ${styles.IconWrapper} link`}
                   key={key}
                 >

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-
 import styles from "./modal.module.scss";
 
 const Modal = ({ isOpen, onClose, children, ref }) => {

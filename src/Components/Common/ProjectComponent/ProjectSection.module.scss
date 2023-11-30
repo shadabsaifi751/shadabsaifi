@@ -1,5 +1,4 @@
 .Icon_group {
-
     .Icon_Github,
     .Icon_Link {
         display: block;
@@ -8,36 +7,36 @@
         width: 20px;
         background: url("../../../Accects/Icons/TechIcon/link.svg") no-repeat center;
     }
-    
+
     .Icon_Github {
         height: 22px;
         width: 22px;
         background: url("../../../Accects/Icons/TechIcon/gitrepo.svg") no-repeat center;
     }
-}
+};
 
 .left_panel {
     grid-area: 1 / 1 / -1 / 7;
 
-    .sepia_filter {
-        mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(1) brightness(90%);
+    // .sepia_filter {
+    //     mix-blend-mode: multiply;
+    //     filter: grayscale(100%) contrast(1) brightness(90%);
 
-        &:hover {
-            background: transparent;
-            filter: none;
-        }
-        @media (max-width:768px) {
-            filter: none;
-            mix-blend-mode:unset;
-        }
-    }
+    //     &:hover {
+    //         background: transparent;
+    //         filter: none;
+    //     }
+    //     @media (max-width: 768px) {
+    //         filter: none;
+    //         mix-blend-mode: unset;
+    //     }
+    // }
 
     &.Even_Active {
         grid-area: 1/1/-1/8;
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
         grid-area: auto;
         &.Even_Active {
             grid-area: auto;
@@ -51,21 +50,39 @@
     &.Even_Active {
         grid-area: 1 / 7 / -1 / -1;
     }
+    
     .sepia_filter {
-        mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(1) brightness(90%);
+        // mix-blend-mode: multiply;
+        // filter: grayscale(100%) contrast(1) brightness(90%);
+        position: relative;
+        background-color: rgba(var(--card-border-rgb), 0.4);
+        transition: all 0.3s linear;
+
+        &::after {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: "";
+            top: 0;
+            left: 0;
+            background-color: transparent;
+        }
+        &:hover {
+            &::after {
+                background: transparent;
+            }
+        }
 
         &:hover {
-            background: transparent;
-            filter: none;
+            // filter: none;
         }
-        @media (max-width:768px) {
-            mix-blend-mode:unset;
-            filter: none;
-        }
+        // @media (max-width:768px) {
+        //     mix-blend-mode:unset;
+        //     filter: none;
+        // }
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
         grid-area: auto;
         &.Even_Active {
             grid-area: auto;
